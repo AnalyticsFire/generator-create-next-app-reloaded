@@ -1,0 +1,25 @@
+{
+  "name": "@analyticsfire/generator-create-next-app-reloaded",
+  "version": "1.0.0",
+  "description": "Yoman Generator for create-next-app-reloaded",
+  "scripts": {},
+  "keywords": [
+    "yeoman-generator",
+    "react",
+    "create-next-app",
+    "redux-observables"
+  ],
+  "files": [
+    "generators"
+  ],
+  "author": "Damian Aruj <damian@analyticsfire.com> (https://github.com/daruj)",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnalyticsFire/generator-create-next-app-reloaded"
+  }
+}
