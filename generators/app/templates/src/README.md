@@ -141,7 +141,7 @@ $ yo create-next-app-reloaded:page
     force server.js
 ```
 
-### `yo create-next-app-reloaded:page`
+### `yo create-next-app-reloaded:component`
 It will prompt you the name for your new component.
 ```
 $ yo create-next-app-reloaded:component
