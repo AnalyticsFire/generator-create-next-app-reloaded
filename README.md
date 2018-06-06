@@ -159,7 +159,7 @@ This yeoman generator will build different React components, creating a skeleton
 # Credits
 Damian Aruj <damian@analyticsfire.com>
 
-Github: https://github.com/daruj/generator-create-next-app-reloaded
+Github: https://github.com/analyticsfire/generator-create-next-app-reloaded
 
 # Licence
 MIT
