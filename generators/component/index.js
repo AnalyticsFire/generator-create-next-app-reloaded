@@ -78,5 +78,13 @@ module.exports = class extends Generator {
         nameWithLowerCase
       }
     );
+    // update main.scss to add the new component stylesheet
+    this.fs.copy('./styles/main.scss', './styles/main.scss', {
+      process: function(content) {
+          var regEx = new RegExp(/\/\* new-component-stylesheet-goes-here \*\//, 'g');
+          var newContent = content.toString().replace(regEx, `@import '~@root/components/${nameWithLowerCase}/${nameWithLowerCase}.scss';\n/* new-component-stylesheet-goes-here */`);
+          return newContent;
+      }
+    });
   }
 };

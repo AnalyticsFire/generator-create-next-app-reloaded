@@ -95,8 +95,17 @@ module.exports = class extends Generator {
     // update server.js to add the new namespace to the list
     this.fs.copy('./server.js', './server.js', {
       process: function(content) {
-          var regEx = new RegExp(/\], \/\/ need to preload all the namespaces/, 'g');
-          var newContent = content.toString().replace(regEx, `, '${nameWithLowerCase}'], // need to preload all the namespaces`);
+          var regEx = new RegExp(/\/\* new-i18n-namespace-here \*\//, 'g');
+          var newContent = content.toString().replace(regEx, `, '${nameWithLowerCase}'/* new-i18n-namespace-here */`);
+          return newContent;
+      }
+    });
+
+    // update main.scss to add the new page stylesheet
+    this.fs.copy('./styles/main.scss', './styles/main.scss', {
+      process: function(content) {
+          var regEx = new RegExp(/\/\* new-page-stylesheet-goes-here \*\//, 'g');
+          var newContent = content.toString().replace(regEx, `@import '~@root/pages/${nameWithLowerCase}/${nameWithLowerCase}.scss';\n/* new-page-stylesheet-goes-here */`);
           return newContent;
       }
     });
