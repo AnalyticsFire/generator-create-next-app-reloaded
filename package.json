@@ -1,6 +1,6 @@
 {
-  "name": "@analyticsfire/generator-create-next-app-reloaded",
-  "version": "1.0.0",
+  "name": "generator-create-next-app-reloaded",
+  "version": "1.0.3",
   "description": "Yoman Generator for create-next-app-reloaded",
   "scripts": {},
   "keywords": [

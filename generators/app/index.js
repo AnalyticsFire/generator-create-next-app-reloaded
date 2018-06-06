@@ -59,6 +59,8 @@ module.exports = class extends Generator {
     this.fs.copy(this.templatePath('src/.*'), this.destinationPath('./'));
     // copy all folders and their contents
     this.fs.copy(this.templatePath('src'), this.destinationPath('./'));
+    // save config file!
+    this.config.save()
   }
   install() {
     // install all dependencies

@@ -29,6 +29,9 @@ $ yarn dev
   - [yarn dev](#yarn-dev)
   - [yarn build](#yarn-build)
   - [yarn start](#yarn-start)
+- [Available Generators](#available-generators)
+  - [yo create-next-app-reloaded:page](#page)
+  - [yo create-next-app-reloaded:component](#component)
 
 # Questions? Feedback?
 Check out [Next.js FAQ & docs](https://github.com/zeit/next.js#faq) or [let us know](https://github.com/segmentio/create-next-app/issues) your feedback.
@@ -98,6 +101,8 @@ my-app/
   package.json
 ```
 
+# Available Scripts
+
 ### `yarn dev`
 
 Runs the app in the development mode.<br>
@@ -117,6 +122,36 @@ Starts the application in production mode.
 The application should be compiled with \`next build\` first.
 
 See the section in Next docs about [deployment](https://github.com/zeit/next.js/wiki/Deployment) for more information.
+
+# Available Generators
+
+### `yo create-next-app-reloaded:page`
+It will prompt you the name and the title for your new page.
+```
+$ yo create-next-app-reloaded:page
+? Page name: contactUs
+? Page title: Contact Us Page
+   create pages/contactUs/contactUs.js
+   create pages/contactUs/index.js
+   create pages/contactUs/contactUs.scss
+   create static/locales/en/contactUs.json
+   create tests/units/pages/contactUs.test.js
+ conflict server.js // This is because we are adding the new i18n namespace into the namespaces array.
+? Overwrite server.js? overwrite
+    force server.js
+```
+
+### `yo create-next-app-reloaded:component`
+It will prompt you the name for your new component.
+```
+$ yo create-next-app-reloaded:component
+? Component name: myNav
+   create components/myNav/myNav.js
+   create components/myNav/index.js
+   create components/myNav/casa.scss
+   create static/locales/en/myNav.json
+   create tests/units/components/myNav.test.js
+```
 
 # What does this generator do?
 This yeoman generator will build different React components, creating a skeleton for the different files.
