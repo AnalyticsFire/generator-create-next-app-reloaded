@@ -11,7 +11,7 @@ Second, install Yeoman. More information about Yeoman: http://yeoman.io/
 
 # Installation
 ```
-$ npm install -g create-next-app-reloaded
+$ npm install -g generator-create-next-app-reloaded
 ```
 
 # Usage
@@ -159,7 +159,7 @@ This yeoman generator will build different React components, creating a skeleton
 # Credits
 Damian Aruj <damian@analyticsfire.com>
 
-Github: https://github.com/daruj/generator-create-next-app-reloaded
+Github: https://github.com/analyticsfire/generator-create-next-app-reloaded
 
 # Licence
 MIT
