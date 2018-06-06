@@ -11,7 +11,7 @@ Second, install Yeoman. More information about Yeoman: http://yeoman.io/
 
 # Installation
 ```
-$ npm install -g create-next-app-reloaded
+$ npm install -g generator-create-next-app-reloaded
 ```
 
 # Usage
