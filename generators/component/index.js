@@ -93,7 +93,7 @@ module.exports = class extends Generator {
             `@import '~@root/components/${nameWithLowerCase}/${nameWithLowerCase}.scss';\n/* new-component-stylesheet-goes-here */`
           );
         return newContent;
-      }
+      },
     });
   }
 };

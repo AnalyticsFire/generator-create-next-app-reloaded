@@ -33,8 +33,9 @@ $ yarn dev
   * [yarn build](#yarn-build)
   * [yarn start](#yarn-start)
 * [Available Generators](#available-generators)
-  * [yo create-next-app-reloaded:page](#page)
-  * [yo create-next-app-reloaded:component](#component)
+  * [yo create-next-app-reloaded:page](#yo-create-next-app-reloadedpage)
+  * [yo create-next-app-reloaded:component](#yo-create-next-app-reloadedcomponent)
+* [Changelog](#changelog-generator)
 
 # Questions? Feedback?
 
@@ -160,6 +161,9 @@ $ yo create-next-app-reloaded:component
    create static/locales/en/myNav.json
    create tests/units/components/myNav.test.js
 ```
+
+# Changelog Generator
+Generate a changelog from git commits using https://github.com/lob/generate-changelog. This is meant to be used so that for every patch, minor, or major version, you update the changelog prior to running npm version so that the git tag contains the commit that updated both the changelog and version.
 
 # What does this generator do?
 
