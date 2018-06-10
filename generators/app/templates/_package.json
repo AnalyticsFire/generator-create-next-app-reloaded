@@ -1,6 +1,7 @@
 {
   "name": "<%= name %>",
   "author": "<%= fullName %> <<%= email %>>",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
