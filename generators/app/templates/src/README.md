@@ -1,8 +1,9 @@
-
 # A great component builder for ReactJs using NextJs
+
 This yeoman generator will build different React components, creating a skeleton for the different files.
 
 # Requirements
+
 This is a Yeoman generator. You need to install Yeoman, NodeJS and npm to install the generator and its dependencies. Make sure you have all installed globally.
 
 First, download and install NodeJS and npm. More information about NodeJS / npm: https://nodejs.org/
@@ -10,11 +11,13 @@ First, download and install NodeJS and npm. More information about NodeJS / npm:
 Second, install Yeoman. More information about Yeoman: http://yeoman.io/
 
 # Installation
+
 ```
 $ npm install -g generator-create-next-app-reloaded
 ```
 
 # Usage
+
 ```
 $ yo create-next-app-reloaded
 $ cd create-next-app-reloaded
@@ -23,17 +26,18 @@ $ yarn dev
 
 # Table of Contents
 
-- [Questions? Feedback?](#questions-feedback)
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
-  - [yarn dev](#yarn-dev)
-  - [yarn build](#yarn-build)
-  - [yarn start](#yarn-start)
-- [Available Generators](#available-generators)
-  - [yo create-next-app-reloaded:page](#page)
-  - [yo create-next-app-reloaded:component](#component)
+* [Questions? Feedback?](#questions-feedback)
+* [Folder Structure](#folder-structure)
+* [Available Scripts](#available-scripts)
+  * [yarn dev](#yarn-dev)
+  * [yarn build](#yarn-build)
+  * [yarn start](#yarn-start)
+* [Available Generators](#available-generators)
+  * [yo create-next-app-reloaded:page](#page)
+  * [yo create-next-app-reloaded:component](#component)
 
 # Questions? Feedback?
+
 Check out [Next.js FAQ & docs](https://github.com/zeit/next.js#faq) or [let us know](https://github.com/segmentio/create-next-app/issues) your feedback.
 
 # Folder Structure
@@ -126,7 +130,9 @@ See the section in Next docs about [deployment](https://github.com/zeit/next.js/
 # Available Generators
 
 ### `yo create-next-app-reloaded:page`
+
 It will prompt you the name and the title for your new page.
+
 ```
 $ yo create-next-app-reloaded:page
 ? Page name: contactUs
@@ -142,7 +148,9 @@ $ yo create-next-app-reloaded:page
 ```
 
 ### `yo create-next-app-reloaded:component`
+
 It will prompt you the name for your new component.
+
 ```
 $ yo create-next-app-reloaded:component
 ? Component name: myNav
@@ -154,12 +162,14 @@ $ yo create-next-app-reloaded:component
 ```
 
 # What does this generator do?
+
 This yeoman generator will build different React components, creating a skeleton for the different files.
 
 # Credits
-Damian Aruj <damian@analyticsfire.com>
 
+Damian Aruj <mailto:damian@analyticsfire.com>
 Github: https://github.com/analyticsfire/generator-create-next-app-reloaded
 
 # Licence
+
 MIT
