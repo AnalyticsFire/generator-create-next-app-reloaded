@@ -1,6 +1,6 @@
 {
   "name": "generator-create-next-app-reloaded",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Yoman Generator for create-next-app-reloaded",
   "scripts": {
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
