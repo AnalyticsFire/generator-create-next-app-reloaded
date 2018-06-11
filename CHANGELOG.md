@@ -1,3 +1,13 @@
+#### 1.0.6 (2018-06-11)
+
+##### New Features
+
+*  Implemented changelog (patch, minor and major) and release scripts ([f9bc3717](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/f9bc371706f82362136463867d805b7ed57f8772))
+
+##### Bug Fixes
+
+*  Removed duplicated entry in CHANGELOG.md ([52676233](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/526762337459730997572082c28c56905d789cdd))
+
 #### 1.0.5 (2018-06-10)
 
 ##### Documentation Changes
