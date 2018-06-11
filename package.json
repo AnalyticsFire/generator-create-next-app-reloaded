@@ -8,7 +8,8 @@
     "changelog:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin",
     "changelog:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin",
     "changelog:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin",
-    "release": "git push origin --tags"
+    "release": "git push origin --tags",
+    "release-and-publish": "npm release && npm publish"
   },
   "lint-staged": {
     "linters": {
