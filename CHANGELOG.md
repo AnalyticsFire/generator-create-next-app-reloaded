@@ -1,3 +1,9 @@
+#### 1.0.7 (2018-06-11)
+
+##### New Features
+
+*  Implemente release-and-publish script. It will create the tag and publish into npm ([54c4de09](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/54c4de09f4be87136213d5a08268e2ec94700074))
+
 #### 1.0.6 (2018-06-11)
 
 ##### New Features
