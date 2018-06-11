@@ -36,6 +36,7 @@ $ yarn dev
   * [yo create-next-app-reloaded:page](#yo-create-next-app-reloadedpage)
   * [yo create-next-app-reloaded:component](#yo-create-next-app-reloadedcomponent)
 * [Changelog](#changelog-generator)
+* [Release and Publish](#release-and-publish)
 
 # Questions? Feedback?
 
@@ -164,6 +165,9 @@ $ yo create-next-app-reloaded:component
 
 # Changelog Generator
 Generate a changelog from git commits using https://github.com/lob/generate-changelog. This is meant to be used so that for every patch, minor, or major version, you update the changelog prior to running npm version so that the git tag contains the commit that updated both the changelog and version.
+
+# Release and Publish
+In order to release and publish we have created a npm script `npm run release-and-publish` that will create a new tag in github and will publish your pkg into npm.
 
 # What does this generator do?
 
