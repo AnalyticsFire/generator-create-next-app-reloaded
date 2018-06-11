@@ -73,6 +73,10 @@ module.exports = class extends Generator {
         this.templatePath('src/pages/_app_apollo.js'),
         this.destinationPath('./pages/_app.js')
       );
+      this.fs.copy(
+        this.templatePath('src/apollo/nav.js'),
+        this.destinationPath('./components/nav/nav.js')
+      );
     }
     // save config file!
     this.config.save();
