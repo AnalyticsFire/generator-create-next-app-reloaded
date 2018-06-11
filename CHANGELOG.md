@@ -1,3 +1,9 @@
+#### 1.0.8 (2018-06-11)
+
+##### Bug Fixes
+
+*  Fixed npm script for release-and-publish ([c1b3883d](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/c1b3883d8c7180da9317d08d47f62a200eced3d4))
+
 #### 1.0.7 (2018-06-11)
 
 ##### New Features
