@@ -1,3 +1,13 @@
+#### 1.0.9 (2018-06-11)
+
+##### Documentation Changes
+
+*  Added documentation for release-and-publish ([22583086](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/22583086e001c0cc382f463b09a7df4708e61a05))
+
+##### New Features
+
+*  Added the release-and-publish script to the project generator ([2efcb49f](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/2efcb49f9d4468bfb8d1becd8729886816dd93c6))
+
 #### 1.0.8 (2018-06-11)
 
 ##### Bug Fixes
