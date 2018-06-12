@@ -4,6 +4,7 @@ import gql from 'graphql-tag';
 import Layout from '@root/components/layout';
 import { func, bool, object } from 'prop-types';
 import { withI18next } from '@root/lib/withI18next';
+import Counter from '@root/components/counter';
 
 const rates = gql`
   {
@@ -22,6 +23,7 @@ export const ApolloExample = ({ t, loading, error, data }) => {
     <Layout title="asfasfa" className="apolloExample-page">
       <div className="container pt-4 pb-4">
         <h1 className="title text-center pb-3">{t('apolloExample:title')}</h1>
+        <Counter />
         {data.rates.map(({ currency, rate }) => (
           <div key={currency}>
             <p>{`${currency}: ${rate}`}</p>
