@@ -32,13 +32,13 @@ export const Counter = ({ t, value, updateCounter, subtractCounter }) => {
   return (
     <div className="counter">
       <h6>Counter State</h6>
-      <div>
+      <div className="counter__content">
         <button
           onClick={() => subtractCounter({ variables: { counter: value } })}
         >
           Decrease
         </button>
-        <div>{value}</div>
+        <div className="counter__value">{value}</div>
         <button
           onClick={() => updateCounter({ variables: { counter: value } })}
         >
