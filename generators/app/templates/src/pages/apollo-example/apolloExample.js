@@ -22,7 +22,7 @@ export const ApolloExample = ({ t, loading, error, data }) => {
   return (
     <Layout title="asfasfa" className="apolloExample-page">
       <div className="container pt-4 pb-4">
-        <h1 className="title text-center pb-3">{t('apolloExample:title')}</h1>
+        <h1 className="title text-center pb-3">Apollo Example</h1>
         <Counter />
         {data.rates.map(({ currency, rate }) => (
           <div key={currency}>
