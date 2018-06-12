@@ -30,8 +30,16 @@ module.exports = class extends Generator {
         message: "What's your email address",
         store: true,
       },
+      {
+        type: 'input',
+        name: 'apollo',
+        message: 'Would you like to add Apollo? Yes/No',
+        default: 'Yes',
+        store: true,
+      },
     ]).then(answers => {
       this.answers = {
+        apollo: answers.apollo,
         name: answers.name,
         fullName: answers.fullname,
         email: answers.email,
@@ -40,7 +48,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const { name, fullName, email } = this.answers;
+    const { name, fullName, email, apollo } = this.answers;
     // create folder project
     mkdirp(name);
     // change project root to the new folder
@@ -59,6 +67,17 @@ module.exports = class extends Generator {
     this.fs.copy(this.templatePath('src/.*'), this.destinationPath('./'));
     // copy all folders and their contents
     this.fs.copy(this.templatePath('src'), this.destinationPath('./'));
+    // copy apollo app config if apollo var equals 'Yes'
+    if (apollo === 'Yes') {
+      this.fs.copy(
+        this.templatePath('src/pages/_app_apollo.js'),
+        this.destinationPath('./pages/_app.js')
+      );
+      this.fs.copy(
+        this.templatePath('src/apollo/nav.js'),
+        this.destinationPath('./components/nav/nav.js')
+      );
+    }
     // save config file!
     this.config.save();
   }

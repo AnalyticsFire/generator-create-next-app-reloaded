@@ -1,3 +1,9 @@
+#### 1.0.10 (2018-06-12)
+
+##### New Features
+
+*  Apollo option added to generator ([78f6d33b](https://github.com/AnalyticsFire/generator-create-next-app-reloaded/commit/78f6d33b78844dcdbabe34db8f4bb0e2f35293fd))
+
 #### 1.0.9 (2018-06-11)
 
 ##### Documentation Changes

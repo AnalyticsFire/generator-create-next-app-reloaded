@@ -1,0 +1,19 @@
+.counter {
+  border: solid 1px;
+  padding: 15px 30px 30px 30px;
+  box-sizing: border-box;
+
+  & h6 {
+    text-align: center;
+  }
+
+  &__value {
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+  
